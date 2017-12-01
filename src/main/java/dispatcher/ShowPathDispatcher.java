@@ -10,7 +10,7 @@ public class ShowPathDispatcher implements Disp{
 
     public void toDispatch(String[] args){
         if ( args.length != 1){
-            System.out.println("Enter 'pwd' command properly!");
+            System.out.println("Enter the proper command or use 'help'...");
             new Main().mainCircle();
         } else {
             ApplicationContext ctx = CtxUtil.getContext();

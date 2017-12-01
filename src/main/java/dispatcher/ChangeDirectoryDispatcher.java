@@ -11,13 +11,12 @@ public class ChangeDirectoryDispatcher implements Disp {
 
     public void toDispatch(String[] args){
         if (args.length != 2 ){
-            System.out.println("Use 'cd' command properly!");
-            new Main().mainCircle();
+            System.out.println("Enter the proper command or use 'help'...");
         } else {
             ApplicationContext ctx = CtxUtil.getContext();
             Constructor constructor = (Constructor) ctx.getBean("constructor");
             constructor.changeDirectory(args[1]);
-            new Main().mainCircle();
         }
+        new Main().mainCircle();
     }
 }

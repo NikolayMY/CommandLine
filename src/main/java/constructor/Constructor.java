@@ -1,6 +1,6 @@
 package constructor;
 
-import exceptions.OutOfRangeException;
+
 import utils.changeDirectory.ChangeDirectory;
 import utils.changeDirectory.ChangeDirectoryImpl;
 import utils.help.Help;
@@ -31,16 +31,16 @@ public class Constructor {
    }
    public Constructor(){}
 
-   public void scanPorts(String host, int from, int to, boolean verbose) throws OutOfRangeException{
+   public void scanPorts(String host, int from, int to, String verbose){
        portScanner.scan(host, from, to, verbose);
    }
 
 
-   public void scanPorts(String host, int port, boolean verbose) throws OutOfRangeException{
-       portScanner.scan(host, port, verbose);
+   public void scanPorts(String host, int port){
+       portScanner.scan(host, port);
    }
 
-   public void scanPorts(String host, boolean verbose){
+   public void scanPorts(String host, String verbose){
        portScanner.scan(host, verbose);
    }
 

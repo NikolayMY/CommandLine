@@ -6,9 +6,13 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println(System.getProperty("os.arch"));
-        System.out.println(System.getProperty("os.name"));
-        System.out.println(System.getProperty("os.version"));
+        String s = "1s";
+        String a = "22";
+        String b = "ss";
+
+        System.out.println(Integer.parseInt(s));
+        System.out.println(Integer.parseInt(a));
+        System.out.println(Integer.parseInt(b));
 
     }
 
